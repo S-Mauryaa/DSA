@@ -9,6 +9,16 @@ using namespace std;
     }
     cout<<endl;
   }
+  void reversePart(int i,int j, vector<int>& v){
+  while(i<=j){
+    int temp=v[i];
+    v[i]=v[j];
+    v[j]=temp;
+    i++;
+    j--;
+  }
+  return;
+  }
 int main(){
 vector<int> v;
 v.push_back(4);
@@ -30,11 +40,17 @@ v.push_back(3);
     //     j--;
     // }
 // ** we can give two or more than two initialization,condition or increment and decrement in a single for loop
-for(int i=0,j=v.size()-1;i<=j;i++,j--){
-    int temp=v[i];
-    v[i]=v[j];
-    v[j]=temp;
-}
-    display(v);
+// for(int i=0,j=v.size()-1;i<=j;i++,j--){
+//     int temp=v[i];
+//     v[i]=v[j];
+//     v[j]=temp;
+// }
+//!! a  built in function of vector
+//$$   reverse(v.begin(),v.end());
+ 
+// when we need to reverse a part of the array, web do it by creating a function for it
+ reversePart(0,3,v);   
+
+display(v);
 
 }
