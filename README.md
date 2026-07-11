@@ -314,7 +314,7 @@ Follow the steps below to compile and execute any solution on your local machine
 Ensure you have a C++ compiler installed (e.g., `GCC/g++`).
 
 #### On Windows:
-1. Download and install [MinGW](https://www.mingw-w64.org/).
+1. Download and Install [MinGW](https://www.mingw-w64.org/).
 2. Add the `bin` directory to your system environment variables.
 3. Validate installation by running:
    ```bash
