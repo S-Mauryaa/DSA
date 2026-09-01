@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-void storeSubset(string ans, string original, vector<string> &v)
+void storeSubset(string ans, string original, vector<string> &v,bool flag)
 {
     if (original == "")
     {
@@ -17,7 +17,7 @@ int main()
 {
     string str = "aab";
     vector<string> v;
-    storeSubset("", str, v);
+    storeSubset("", str, v,true);
     for (int i = 0; i < v.size(); i++)
     {
         cout << v[i] << endl;

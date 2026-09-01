@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/saurabhmaurya/DSA/Dsa_Codes/10-Recursion/2/fibonacci'
+relocations:     []
+...
